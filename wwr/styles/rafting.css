@@ -1,6 +1,6 @@
 :root {
     --primary-color:#136F63;
-    --secondary-color: #8F754F;
+    --secondary-color: #5c4c35;
     --accent1-color:   #38A700;
     --accent2-color:    #E9EDDE;
 }
@@ -49,6 +49,10 @@ nav a:hover {
 	color: sandybrown;
 	font-weight: 800;
 	text-decoration: underline;
+}
+
+h1{
+    color: white;
 }
 
 h2 {
@@ -141,4 +145,8 @@ footer a img {
 
 footer a {
     text-decoration: none;
+}
+
+footer p {
+    color: white;
 }
