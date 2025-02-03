@@ -87,19 +87,39 @@ section p {
     top: 500%;
     left: 50%;
     color: white;
-    transform: translate(-50%, -50%);
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
 }
 
-article{
-    margin: 2rem 0;
+
+.article-image {
+    float: right;
+    margin-right: 20px; 
+    margin-bottom: 10px; 
+    max-width: 40%; 
 }
 
 .history {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
     gap: 20px;
+}
+
+.history h1{
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+}
+
+.history img{
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    max-width: 40%;
+}
+
+.history p{
+    grid-template-columns: 1;
+    grid-template-rows: 2;
 }
 
 .adventures {
