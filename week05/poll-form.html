@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWD 130 | Html Form - User Poll</title>
+</head>
+<body>
+    <header>
+        <h1>WWD 130 | Nathaniel Chigumbura | HTML Form - User Poll</h1>
+    </header>
+    <main>
+    <form >
+        <fieldset>
+            <legend>Contact Infomation</legend>
+            <label>Full name: <input type="text" name="fullname"></label>
+            <label>Email: <input type="text" name="useremail"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Questions</legend>
+            <label>What is the name of your favorite browser? 
+                <select name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="safari">Safari</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label>Do you have a household pet?<input type="checkbox"  name="pet"></label>
+            <label>List the places you have lived <textarea name="feedback" rows="4" placeholder="Harare,Buluwayo.Mutare,Gweru" ></textarea> </label>
+        </fieldset>
+        <button type="submit"> Submit Poll </button>
+    </form>
+    </main>
+    <footer>
+        <p>©2025 | HTML Form - User Poll Activity | Nathaniel Chigumbura </p>
+    </footer>
+</body>
+</html>
