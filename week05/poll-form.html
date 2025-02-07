@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WWD 130 | Html Form - User Poll</title>
+
+    <link rel="stylesheet" href="poll-form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <header>
@@ -12,21 +20,34 @@
     <main>
     <form >
         <fieldset>
-            <legend>Contact Infomation</legend>
-            <label>Full name: <input type="text" name="fullname"></label>
-            <label>Email: <input type="text" name="useremail"></label>
+            <legend>Contact Information</legend>
+            <div class="form-item column2">
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" name="fullname">
+            </div>
+            <div class="form-item column2">
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail">
+            </div>
         </fieldset>
         <fieldset>
             <legend>Questions</legend>
-            <label>What is the name of your favorite browser? 
-                <select name="browser">
+            <div class="form-item column1">
+                <label for="browser">What is the name of your favorite browser?</label>
+                <select id="browser" name="browser">
                     <option value="chrome">Chrome</option>
                     <option value="safari">Safari</option>
                     <option value="other">Other</option>
                 </select>
-            </label>
-            <label>Do you have a household pet?<input type="checkbox"  name="pet"></label>
-            <label>List the places you have lived <textarea name="feedback" rows="4" placeholder="Harare,Buluwayo.Mutare,Gweru" ></textarea> </label>
+            </div>
+            <div class="form-item column1">
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+            </div>
+            <div class="form-item">
+                <label for="feedback">List the places you have lived</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Harare, Buluwayo, Mutare, Gweru"></textarea>
+            </div>
         </fieldset>
         <button type="submit"> Submit Poll </button>
     </form>
