@@ -1,22 +1,22 @@
 :root {
-    --primary-color:#136F63;
+    --primary-color: #136F63;
     --secondary-color: #5c4c35;
-    --accent1-color:   #38A700;
-    --accent2-color:    #E9EDDE;
+    --accent1-color: #38A700;
+    --accent2-color: #E9EDDE;
 }
 
-body{
-    font-family: 'Roboto', Condensed;
-    margin: 0px;
-    padding: 0px;
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
     color: var(--primary-color);
 }
 
-header{
+header {
     background-color: var(--primary-color);
     padding: 10px;
     display: grid;
-    grid-template-columns: 100px auto 1fr ;
+    grid-template-columns: 100px auto 1fr;
     align-items: center;
 }
 
@@ -46,12 +46,12 @@ nav a {
 }
 
 nav a:hover {
-	color: sandybrown;
-	font-weight: 800;
-	text-decoration: underline;
+    color: sandybrown;
+    font-weight: 800;
+    text-decoration: underline;
 }
 
-h1{
+h1 {
     color: white;
 }
 
@@ -59,16 +59,12 @@ h2 {
     text-align: center;
 }
 
-section{
+section {
     padding: 20px;
 }
 
 section p {
     text-align: center;
-}
-
-.sociallinks a img {
-    text-decoration: none;
 }
 
 .hero {
@@ -82,44 +78,28 @@ section p {
     height: auto;
 }
 
-.hero h1 {
+.hero h2 {
     position: absolute;
-    top: 500%;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
 }
 
-
 .article-image {
     float: right;
-    margin-right: 20px; 
-    margin-bottom: 10px; 
-    max-width: 40%; 
+    margin-right: 20px;
+    margin-bottom: 10px;
+    max-width: 40%;
 }
 
 .history {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 20px;
-}
-
-.history h1{
-    grid-template-columns: 2;
-    grid-template-rows: 1;
-}
-
-.history img{
-    grid-template-columns: 2;
-    grid-template-rows: 2;
-    max-width: 40%;
-}
-
-.history p{
-    grid-template-columns: 1;
-    grid-template-rows: 2;
 }
 
 .adventures {
@@ -137,10 +117,10 @@ section p {
 .adventures figcaption {
     margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
-footer{
+footer {
     background-color: var(--secondary-color);
     padding: 10px;
     text-align: center;
@@ -160,10 +140,6 @@ footer a img {
     width: 30px;
     height: 30px;
     margin: 0 5px;
-    text-decoration: none;
-}
-
-footer a {
     text-decoration: none;
 }
 
