@@ -15,19 +15,13 @@ body {
 header {
     background-color: var(--primary-color);
     padding: 10px;
-    display: grid;
-    grid-template-columns: 100px auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-header img {
-    width: 100px;
-    height: auto;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
+header h1 {
+    color: white;
 }
 
 nav ul {
@@ -40,7 +34,6 @@ nav ul {
 
 nav a {
     color: white;
-    margin: 10px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
@@ -51,73 +44,78 @@ nav a:hover {
     text-decoration: underline;
 }
 
-h1 {
-    color: white;
-}
-
-h2 {
-    text-align: center;
-}
-
-section {
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
 }
 
-section p {
-    text-align: center;
+#office-team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
-.hero {
-    position: relative;
-    text-align: center;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px;
-}
-
-.article-image {
-    float: right;
+.map {
+    flex: 1;
     margin-right: 20px;
-    margin-bottom: 10px;
-    max-width: 40%;
+    min-width: 300px; /* Minimum width to prevent too much shrinking */
 }
 
-.history {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 20px;
+.info-team {
+    flex: 1;
+    min-width: 300px; /* Minimum width to prevent too much shrinking */
 }
 
-.adventures {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    padding: 20px 0;
+.contact-info, .team {
+    margin-bottom: 20px;
 }
 
-.adventures figure {
+.contact-info p, .team p {
+    margin: 5px 0;
+}
+
+.team .employee {
+    display: inline-block;
     text-align: center;
-    margin: 0;
+    margin: 10px;
 }
 
-.adventures figcaption {
+.team .employee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.team .employee p {
     margin-top: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--primary-color);
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--accent1-color);
 }
 
 footer {
@@ -128,12 +126,27 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 footer .sociallinks {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
 footer a img {
@@ -143,6 +156,16 @@ footer a img {
     text-decoration: none;
 }
 
-footer p {
-    color: white;
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+
+    #office-team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map, .info-team {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
