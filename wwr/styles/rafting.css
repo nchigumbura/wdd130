@@ -85,7 +85,6 @@ main {
 .team .employee img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
 }
 
 .team .employee p {
@@ -96,6 +95,7 @@ main {
 form {
     display: flex;
     flex-direction: column;
+    
     gap: 10px;
 }
 
@@ -164,8 +164,4 @@ footer a img {
         align-items: center;
     }
 
-    .map, .info-team {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
 }
