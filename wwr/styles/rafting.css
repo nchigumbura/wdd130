@@ -1,7 +1,7 @@
 :root {
     --primary-color: #136F63;
     --secondary-color: #5c4c35;
-    --accent1-color: #38A700;
+    --accent1-color: #2b7e01;
     --accent2-color: #E9EDDE;
 }
 
@@ -54,18 +54,18 @@ main {
 #office-team {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 .map {
     flex: 1;
     margin-right: 20px;
-    min-width: 300px; /* Minimum width to prevent too much shrinking */
+    min-width: 300px;
 }
 
 .info-team {
     flex: 1;
-    min-width: 300px; /* Minimum width to prevent too much shrinking */
+    min-width: 300px;
 }
 
 .contact-info, .team {
@@ -95,7 +95,6 @@ main {
 form {
     display: flex;
     flex-direction: column;
-    
     gap: 10px;
 }
 
@@ -126,7 +125,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 footer p {
@@ -146,7 +145,7 @@ footer .sociallinks {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 footer a img {
@@ -156,12 +155,179 @@ footer a img {
     text-decoration: none;
 }
 
-/* Media Queries for smaller screens */
 @media (max-width: 768px) {
-
     #office-team {
         flex-direction: column;
         align-items: center;
     }
+}
 
+.adventures h2 {
+    text-align: center;
+}
+
+.adventure-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.adventure-grid div {
+    flex: 1 1 calc(20% - 10px);
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img.full-width-image {
+    width: 100%;
+}
+
+.hero-heading {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero-subheading {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.rafting-info {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+}
+
+.rafting-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.history-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.history-content {}
+
+.history-image img {
+    width: 100%;
+    height: auto;
+}
+
+.article-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.article-content {
+    text-align: center;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.trip-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.trip {
+    flex: 1;
+    text-align: center;
+}
+
+.trip-large {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.trip-large img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.cta {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+}
+
+.cta .cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--accent1-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta .cta-button:hover {
+    background-color: var(--accent2-color);
 }
